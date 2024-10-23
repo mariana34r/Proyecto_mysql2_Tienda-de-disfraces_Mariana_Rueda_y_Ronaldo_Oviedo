@@ -361,15 +361,15 @@ detalles de cada compra, incluyendo cantidad, precio unitario y productos asocia
 
 ## Consultas 🎉:
 
-1. **Total de ventas por cada cliente (más de 3 compras)**
+1. Total de ventas por cada cliente (más de 3 compras)
 ```sql
 SELECT id_cliente, SUM(total_venta) AS total_ventas
 FROM Ventas
 GROUP BY id_cliente
 HAVING COUNT(id_venta) > 3;
 
-2. **Listar los productos más vendidos (cantidad total) en las ventas y el total de ingresos generados por cada uno**
-```sql
+2. Listar los productos más vendidos (cantidad total) en las ventas y el total de ingresos generados por cada uno
+
 SELECT Productos.id_producto, Productos.nombre, SUM(Detalles_Compra.cantidad) AS total_cantidad_vendida, 
 SUM(Detalles_Compra.precio_unitario * Detalles_Compra.cantidad) AS total_ingresos
 FROM Productos
