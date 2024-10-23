@@ -658,7 +658,7 @@ LIMIT 1;
 # Procedimientos 🤡:
 
 
-## 1. Procesar Venta
+-- 1. Procesar Venta --
 
 ```sql
 CREATE PROCEDURE ProcesarVenta(
