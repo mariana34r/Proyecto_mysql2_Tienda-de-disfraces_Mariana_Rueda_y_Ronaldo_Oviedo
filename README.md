@@ -20,8 +20,7 @@ Esta base de datos de tienda de disfraces almacena disfraces, accesorios, maquil
 
 # Imagen de la base de datos Tienda de disfraces 🧛‍♂️:
 
-![image](https://github.com/user-attachments/assets/3b7689dd-dd10-4ede-b03a-97304d5a1a08)
-
+![image](https://github.com/user-attachments/assets/ae4610ae-0794-4351-af4c-9f48d81df1ea)
 
 # Estructura de la Base de Datos 👑:
 
