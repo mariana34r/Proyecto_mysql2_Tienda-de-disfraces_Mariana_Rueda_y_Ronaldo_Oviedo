@@ -4,12 +4,11 @@
 | Indice | Título  |
 |--|--|
 | 1. | [Descripción_del_proyecto](#Descripción_del_proyecto) |
-| 2. | [Estructura_de_la_Base_de_Datos](#Estructura_de_la_Base_de_Datos) |
-| 3. | [Imagen de la base de Datos](#Imagen_de_la_base_de_Datos) |
-| 5. | [Estructura de la Base de Datos](#Estructura_de_la_Base_de_Datos) |
-| 6. | [Requerimientos](#Requerimientos) |
-| 7. | [Consultas](#Consultas) |
-| 8. | [Autores](#Autores) |
+| 2. | [Imagen de la base de Datos](#Imagen_de_la_base_de_Datos) |
+| 3. | [Estructura de la Base de Datos](#Estructura_de_la_Base_de_Datos) |
+| 4. | [Requerimientos](#Requerimientos) |
+| 5. | [Consultas](#Consultas) |
+| 6. | [Autores](#Autores) |
 
 
 
