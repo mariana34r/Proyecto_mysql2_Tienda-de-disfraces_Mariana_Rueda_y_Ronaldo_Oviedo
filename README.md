@@ -657,8 +657,10 @@ LIMIT 1;
 
 # Procedimientos 🤡:
 
--- 1. Procesar Venta --
 
+## 1. Procesar Venta
+
+```sql
 CREATE PROCEDURE ProcesarVenta(
     IN p_id_cliente INT,
     IN p_id_empleado INT,
@@ -674,7 +676,11 @@ BEGIN
     SET v_id_venta = LAST_INSERT_ID();
 
     INSERT INTO Detalles_Compra (id_venta, id_producto, cantidad, precio_unitario)
-    SELECT v_id_venta, JSON_UNQUOTE(JSON_EXTRACT(p_detalles, '$.id_producto')), JSON_UNQUOTE(JSON_EXTRACT(p_detalles, '$.cantidad')), JSON_UNQUOTE(JSON_EXTRACT(p_detalles, '$.precio_unitario'));
+    SELECT 
+        v_id_venta, 
+        JSON_UNQUOTE(JSON_EXTRACT(p_detalles, '$.id_producto')), 
+        JSON_UNQUOTE(JSON_EXTRACT(p_detalles, '$.cantidad')), 
+        JSON_UNQUOTE(JSON_EXTRACT(p_detalles, '$.precio_unitario'));
 
     UPDATE Productos
     SET stock = stock - JSON_UNQUOTE(JSON_EXTRACT(p_detalles, '$.cantidad'))
