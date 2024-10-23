@@ -361,7 +361,7 @@ detalles de cada compra, incluyendo cantidad, precio unitario y productos asocia
 
 ## Consultas 🎉:
 
-## 1. Total de ventas por cada cliente (más de 3 compras)
+1. **Total de ventas por cada cliente (más de 3 compras)**
 ```sql
 SELECT id_cliente, SUM(total_venta) AS total_ventas
 FROM Ventas
