@@ -368,7 +368,8 @@ FROM Ventas
 GROUP BY id_cliente
 HAVING COUNT(id_venta) > 3;
 
--- 2. Listar los productos más vendidos (cantidad total) en las ventas y el total de ingresos generados por cada uno
+2. **Listar los productos más vendidos (cantidad total) en las ventas y el total de ingresos generados por cada uno**
+```sql
 SELECT Productos.id_producto, Productos.nombre, SUM(Detalles_Compra.cantidad) AS total_cantidad_vendida, 
 SUM(Detalles_Compra.precio_unitario * Detalles_Compra.cantidad) AS total_ingresos
 FROM Productos
