@@ -427,13 +427,9 @@ LIMIT 3;
 6. **Calcular el promedio de ventas mensuales y mostrar solo los meses en los que las ventas superaron ese promedio**
 
 WITH VentasMensuales AS (
-
     SELECT MONTH(fecha_venta) AS mes, SUM(total_venta) AS total_ventas
-    
     FROM Ventas
-    
     GROUP BY mes
-    
 )
 
 SELECT mes, total_ventas
