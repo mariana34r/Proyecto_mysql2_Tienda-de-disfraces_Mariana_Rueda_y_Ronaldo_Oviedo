@@ -689,6 +689,7 @@ END;
 
 -- 2. Registrar Nuevo Proveedor --
 
+```sql
 CREATE PROCEDURE RegistrarProveedor(
     IN p_nombre VARCHAR(100),
     IN p_telefono VARCHAR(20),
