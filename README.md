@@ -1681,14 +1681,21 @@ LIMIT 1;
     DELIMITER ;
     
  13. **Crear evento para verificar y optimizar índices en tablas**
-    ```sql
+    
     DELIMITER //
+    
     CREATE EVENT VerificarIndices
+    
     ON SCHEDULE EVERY 1 MONTH
+    
     STARTS '2024-11-01 00:00:00'
+    
     BEGIN
+    
         SELECT 'Índices verificados y optimizados.';
+        
     END //
+    
     DELIMITER ;
     
 14. **Crear evento para revisar y ajustar el horario de los empleados**
@@ -1746,18 +1753,29 @@ LIMIT 1;
     DELIMITER ;
     
  18. **Crear evento para archivar registros de ventas antiguas**
-    ```sql
+    
     DELIMITER //
+    
     CREATE EVENT ArchivarVentasAntiguas
+    
     ON SCHEDULE EVERY 6 MONTH
-    STARTS '2024-11-01 00:00:00' 
+    
+    STARTS '2024-11-01 00:00:00'
+    
     DO
+    
     BEGIN
+    
         INSERT INTO Ventas_Archivadas (id_venta, fecha, total)
+        
         SELECT id, fecha, total FROM Ventas WHERE fecha < DATE_SUB(NOW(), INTERVAL 1 YEAR);
+        
         DELETE FROM Ventas WHERE fecha < DATE_SUB(NOW(), INTERVAL 1 YEAR);
+        
     END //
+    
     DELIMITER ;
+
     
 19. **Crear evento para enviar informes de costos**
     ```sql
