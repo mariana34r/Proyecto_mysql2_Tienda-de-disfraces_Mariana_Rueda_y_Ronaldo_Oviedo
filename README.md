@@ -12,7 +12,7 @@
 | 6. | [Funciones](#Funciones) |
 | 7. | [Triggers](#Triggers) |
 | 8. | [Eventos](#Eventos) |
-| 9. | [Roles de Usuario y Permisos](#Roles_de Usuario_y_Permisos |
+| 9. | [Roles de Usuario y Permisos](#Roles_de_Usuario_y_Permisos |
 | 10. | [Autores](#Autores) |
 
 
