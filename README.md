@@ -1865,6 +1865,7 @@ SHOW GRANTS FOR 'encargado_almacen'@'localhost';
 
 
 
+## Autores👤:
 
-
-
+-[Mariana Rueda](https://github.com/mariana34r)
+-[Ronaldo Oviedo](https://github.com/RonaldoOviedo19)
