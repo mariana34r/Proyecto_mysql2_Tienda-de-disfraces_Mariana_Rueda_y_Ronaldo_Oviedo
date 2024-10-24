@@ -1406,7 +1406,7 @@ LIMIT 1;
     DELIMITER ;
     
  13. **Registrar la creación de un nuevo producto**
-     ```sql
+    ```sql
     DELIMITER //
     CREATE TRIGGER registrar_nuevo_producto
     AFTER INSERT ON Productos
