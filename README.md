@@ -8,7 +8,12 @@
 | 3. | [Estructura de la Base de Datos](#Estructura_de_la_Base_de_Datos) |
 | 4. | [Requerimientos](#Requerimientos) |
 | 5. | [Consultas](#Consultas) |
-| 6. | [Autores](#Autores) |
+| 5. | [Procedimientos](#Procedimientos) |
+| 6. | [Funciones](#Funciones) |
+| 7. | [Triggers](#Triggers) |
+| 8. | [Eventos](#Eventos) |
+| 9. | [Roles de Usuario y Permisos](#Roles_de Usuario_y_Permisos |
+| 10. | [Autores](#Autores) |
 
 
 
@@ -935,6 +940,8 @@ LIMIT 1;
 
 
 
+
+
 1. **Función para calcular el stock total de un producto por categoría**
     ```sql
     DELIMITER //
@@ -1243,6 +1250,9 @@ LIMIT 1;
  # Triggers 🦇:
 
 
+
+
+
 1. **Actualizar inventario al insertar una nueva venta**
     ```sql
     DELIMITER //
@@ -1515,7 +1525,10 @@ LIMIT 1;
     DELIMITER ;
 
 
+
 # Eventos 🕸️:
+
+
 
 1. **Crear evento para generar reportes semanales de ventas**
    ```sql
